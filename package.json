@@ -1,0 +1,20 @@
+{
+  "name": "stock-sense-ai",
+  "version": "1.0.0",
+  "description": "AI-Assisted Smart Inventory and Logistics Management Platform for MSMEs",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd server && node seed/seed.js",
+    "test": "echo \"No tests configured yet\""
+  },
+  "keywords": ["inventory", "ai", "msme", "logistics"],
+  "author": "StockSense AI Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
